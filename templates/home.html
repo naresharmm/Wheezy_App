@@ -1,0 +1,27 @@
+<!-- def home():
+@import "registration.html" as reg
+@reg.registration_page()
+@import "login.html" as log
+@log.login_page() -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Main Page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='home_style.css') }}">
+    >
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to the Main Page</h1>
+            <div class="button_container">
+                <a class="button1" href="@url('register')">Register</a>
+                <a class="button2" href="@url('login')">Sign in</a>
+
+                <!-- <buttaon class="button1"
+                data-target="#registration_page">Login</button>
+                <button class="button2" 
+                data-target="#login_page">Register</button> -->
+            </div>        
+        </div>
+    </body>
+    </html>

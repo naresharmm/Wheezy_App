@@ -1,0 +1,41 @@
+def login_page():
+    <head>
+        <link rel="stylesheet" href="@url('static', 'registration.css')">
+    </head>
+    <body>
+        <div id="loginForm" style="margin-top:40px;" class="container hidden">
+            <h1>Login</h1>
+            @if error_message:
+                <div class="error-message" style="
+                    color: #ff0000; 
+                    background-color: #ffe5e5; 
+                    border: 1px solid #ff0000;
+                    padding: 10px; 
+                    margin-bottom: 20px; 
+                    margin-top:8px;
+                    border-radius: 5px;
+                    font-size: 16px;
+                ">{{ error_message }}</div>
+            @endif
+            <form method="POST" action="@url('login')" id="loginFormId">
+                <label for="phone_number">Phone number:</label>
+                <input type="text" id="phone_number" name="phone_number" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password2" name="password" required>
+
+                <button id="loginBtn" style="
+                    background-color: rgb(94, 154, 145);
+                    border-radius:5px;
+                    width:80px
+                    ;height:40px;
+                    border:none;
+                    color:white;
+                    cursor:pointer;
+                    font-size:15px;" >
+                    Login
+                </button>
+            </form>
+        </div>
+    </body>
+@end

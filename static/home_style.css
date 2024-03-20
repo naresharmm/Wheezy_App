@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.regBtn, .button1, .button2, .container a[type="button"],
+ .container button[type="button"] {
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.regBtn, .button1 {
+    background-color: rgb(74, 5, 74);
+}
+
+
+.regBtn:hover {
+    background-color: #0056b3;
+}
+
+.button1:hover {
+    background-color: #b9df9e;
+    color: black;
+}
+
+.button2, .container a[type="button"], .container button[type="button"] {
+    background-color: #333;
+}
+
+.button2:hover, .container a[type="button"]:hover,
+ .container button[type="button"]:hover {
+    background-color: #555;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    margin: 50px auto;
+    background-color: rgb(206, 206, 240);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container form {
+    margin-top: 20px;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.container input[type="text"], .container input[type="password"],
+ .container select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+.container input[type="text"], .container input[type="password"] {
+    width: 300px;
+}
+
+.container select {
+    width: 220px;
+    color: #555;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+#registrationForm, #loginForm {
+    display: none;
+}
+
+.button_container {
+    margin-top: 20px;
+}
+
+.button1, .button2 {
+    display: inline-block;
+    width: 10%;
+    height: 20px;
+    background-color: rebeccapurple;
+}
+#loginBut {
+    background-color: rebeccapurple; 
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px; 
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block; 
+    width: auto; 
+    height: auto; 
+    line-height: normal; 
+    box-shadow: none; 
+    transition: background-color 0.3s ease-in-out;
+    border:none;
+    cursor:pointer;
+}
+
+#loginBut:hover {
+    background-color: #937896; 
+}

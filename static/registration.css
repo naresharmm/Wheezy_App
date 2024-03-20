@@ -1,0 +1,93 @@
+
+body, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #daf3ff, #2ebf91); 
+    text-align: center;
+    height: 40%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px; 
+}
+
+.regBtn, .button1, .button2, .container a[type="button"], 
+.container button[type="button"] {
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px; 
+    display: block;
+    width: 80%; 
+    margin: 10px auto;
+    background-color: #2ebf91; 
+}
+
+.regBtn:hover, .button1:hover, .button2:hover,
+ .container a[type="button"]:hover, .container button[type="button"]:hover {
+    background-color: #555; 
+    color: white;
+}
+
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    width: 330px; 
+    margin-top:20px;
+}
+
+.container form {
+    margin-top: 20px;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+    text-align: left; 
+}
+
+
+.container input[type="text"], 
+.container input[type="password"], .container select, 
+.container input[type="email"], .container input[type="tel"] {
+    padding: 15px;
+    margin-bottom: 20px; 
+    border-radius: 20px; 
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f9f9f9; 
+    display: block;
+    width: calc(100% - 30px); 
+}
+
+
+.button_container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.switch {
+    font-size: 14px;
+    color: #666;
+    padding: 10px;
+    display: block; 
+    margin-top: 20px;
+}

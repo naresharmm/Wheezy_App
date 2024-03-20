@@ -1,0 +1,195 @@
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out, headerBgChange 5s infinite alternate;
+}
+
+.mylist {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.mylist input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.mylist .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.mylist:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.mylist input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.mylist .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.mylist input:checked ~ .checkmark:after {
+    display: block;
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: fadeIn 0.5s ease;
+}
+
+.modal-content {
+    background: rgba(247, 247, 247, 0.9) url('path-to-subtle-texture.png');
+    color: #333;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 5% auto;
+    padding: 2rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 60vw;
+    max-height: 50vh;
+    width: auto;
+    height: auto;
+    overflow-y: auto;
+    animation: fadeIn 0.5s ease;
+    transition: transform 0.2s ease;
+}
+
+.modal-content:hover {
+    transform: scale(1.02);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: -50px;
+    width: 100%;
+    animation: slideInUpFooter 1s ease-in-out;
+}
+
+.text-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.text-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes headerBgChange {
+    from {
+        background-color: #3498db;
+    }
+    to {
+        background-color: #2ecc71;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUpFooter {
+    from {
+        transform: translateY(50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
